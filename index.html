@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>作業權限資料維護</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="Big5">
+    <meta name="author" content="Morefu, Yuan, Anderson" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://test.kmu.edu.tw/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://test.kmu.edu.tw/css/animate.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://test.kmu.edu.tw/css/sweetalert.css" rel="stylesheet"> -->
+    <!-- Custom CSS -->
+    <!-- <link href="https://test.kmu.edu.tw/css/main.css" rel="stylesheet"> -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://test.kmu.edu.tw/js/jquery-1.11.3.min.js"></script>
+    <script src="https://test.kmu.edu.tw/js/bootstrap.min.js"></script>
+    <!-- <script src="https://test.kmu.edu.tw/js/sweetalert.min.js"></script> -->
+    <!-- <script src="https://test.kmu.edu.tw/js/modernizr-custom.js"></script> -->
+    <!-- Custom JS -->
+    <!-- <script src="https://test.kmu.edu.tw/js/main.min.js"></script> -->
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="https://test.kmu.edu.tw/js/crossBrowserCheck.min.js"></script> -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+	<script src="https://test.kmu.edu.tw/js/bootstrapvalidator.min.js"></script>
+    <style>
+    .noscriptMessage { display: none; }
+    #success_message { display: none; }
+    </style>
+    <noscript>
+        <style>
+        .noscriptMessage { display: block; }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <div class="container">
+        <form class="well form-horizontal" action=" " enctype="multipart/form-data" method="post" id="contact-form" data-toggle="validator">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Online Submission</legend>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">First Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Last Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Affiliation</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                            <input name="affiliation" placeholder="Affiliation" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Institution</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="institution" placeholder="Institution" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Phone</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                            <input name="phone" placeholder="Phone" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Nation</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                            <input name="nation" placeholder="Nation" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Title</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input name="title" placeholder="Title" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Topic</label>
+                    <div class="col-md-4 selectContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="topic" class="form-control selectpicker">
+                                <option value=" ">Please select your Topic</option>
+								<option>ALDH2 Research</option>
+								<option>ADH & ALDH Related Genes</option>
+								<option>Alcohol/Acetaldehyde Toxicity</option>
+								<option>Cancer and Other Diseases</option>
+								<option>Environmental and Occupational Medicine</option>
+								<option>Public Health and Alcohol Policy</option>
+								<option>Others</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- File input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">File</label>
+                    <div class="col-md-4">
+                        <input name="file" placeholder="file" type="file">
+                    </div>
+                </div>
+                <!-- Success message -->
+                <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button type="submit" id="submit" class="btn btn-primary">Submit <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
